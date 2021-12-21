@@ -1,17 +1,15 @@
 # Weather-Dashboard
 ## Description
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- The motivation behind this project is to create a weather dashboard for a user to find accurate weather data by using what I have learned thus far with html, css, javascript and bootstrap.
+- This dashboard is purposeful in generating accurate data for a user to determine weather and how to dress for or make plans regarding the data.
+- My html, css, javascript and bootstrap skills have been enhanced and I have better learned how to use open weather map.
 ## Table of Contents (Optional)
-If your README is long, add a table of contents to make it easy for users to find what they need.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+I started by creating a repository on Github 
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:

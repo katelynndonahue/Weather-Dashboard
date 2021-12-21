@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="assets.css.style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
     <div class="app-wrap">
         <header>
             <input type="text" autocomplete="off" class="searchbox" placeholder="Search for a city..."
+            <button>Search</button>
         </header>
         <main>
             <section class="location">
             <div class="city">Philadelphia, PA</div>
             <div class="date">Sunday 19 December 2021</div>
             </section>
-            <div class="current">
                 <div class="temp">32<span>°c</span></div>
                 <div class="weather">Sunny</div>
                 <div class="hi-low">49°c / 29°c</div>
             </div>
         </main>
-    </div>
-<script src="main.js"></script>
+
+        <div class="future-forecast">
+            <div class="today" id="current-temp"> 
+            </div>
+        </div>
+        <section class="col-12 col-md-8 col-lg-9">
+            <div class="table-responsive">
+              <table class="table table-bordered custom-table">
+                <thead>
+                  <tr>
+                    <th scope="col">placeholder</th>
+                    <th scope="col">placeholder</th>
+                    <th scope="col">placeholder</th>
+                    <th scope="col">placeholder</th>
+                    <th scope="col">placeholder</th>
+                    <th scope="col" class="p-3"></th>
+                  </tr>
+                </thead>
+                <tbody id="project-display"></tbody>
+              </table>
+            </div>
+          </section>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
