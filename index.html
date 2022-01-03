@@ -28,31 +28,27 @@
         <main>
           <section class="location">
             <div id="city"></div>
-            <div class="date">Sunday 19 December 2021</div>
+            <div class="date"></div>
           </section>
           <div id="temp"></div>
-          <div class="humidity"></div>
-          <div class="hi-low">49°c / 29°c</div>
+          <div id="humidity"></div>
+          <div id="wind"></div>
+          <div id="UV"></div>
         </main>
 
         <section class="col-12 col-md-8 col-lg-9">
           <div class="table-responsive">
             <table class="table table-bordered custom-table">
               <thead>
-                <html>
+               
                   <style>
                   table, th, td {
                     border:1px solid black;
                   }
                   </style>
-                  <body>
-                <tr><div>Five Day Forecast</div>
-                  <th scope="col">placeholder</th>
-                  <th scope="col">placeholder</th>
-                  <th scope="col">placeholder</th>
-                  <th scope="col">placeholder</th>
-                  <th scope="col">placeholder</th>
-                  <th scope="col" class="p-3"></th>
+                 <div>Five Day Forecast</div>
+                <tr id="forcast">
+                  
                 </tr>
               </thead>
               <tbody id="project-display"></tbody>

@@ -41,8 +41,11 @@ var cityName; "#city";
 var searchBtn = document.querySelector("#search");
 var inputEl = document.querySelector("#input");
 var cityEl = document.querySelector("#city");
-var humidity = document.querySelector("#humidity");
+var humidityEl = document.querySelector("#humidity");
 var tempEl = document.querySelector("#temp");
+var uvIndexEl = document.querySelector("#UV");
+var windSpeedEl = document.querySelector("#wind");
+var forecastEl = document.querySelector("#forcast");
 
 searchBtn.addEventListener("click", function(){
     cityName = inputEl.value;
@@ -62,12 +65,26 @@ searchBtn.addEventListener("click", function(){
         }).then(function(data){
             console.log(data)
             // everything else needs to be in here
-            tempEl.textContent = data.current.temp + " °c";
-            humidityEl.textContent = data.humidity;
-            windSpeedEl.textContent = data.windSpeed;
-            uvIndexEl.textContent = data.uv.index;
-
-
+            tempEl.textContent = "Current temperature: " + data.current.temp + " °c";
+            humidityEl.textContent = "Current humidity: " + data.current.humidity + "%";
+            windSpeedEl.textContent = "Wind speed: " + data.current.wind_speed + "MPH";
+            uvIndexEl.textContent = "UV Index: " + data.current.uvi;
+            
+            var allDays = ""
+            for (let i = 0; i < 5; i++) {
+                
+                var day = `
+                <th scope="col">
+                    <h6><strong>Temp ${data.daily[i].temp.day}°</strong></h6>
+                    <h6>Wind Speed ${data.daily[i].wind_speed}MPH </h6>
+                    <h6>Humidity ${data.daily[i].humidity}%</h6>
+                    <h6>UV Index ${data.daily[i].uvIndex}<h6>
+                  </th>
+                `
+                allDays += day;
+                
+            }
+            forecastEl.innerHTML = allDays;
         })
 
 
