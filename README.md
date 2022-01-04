@@ -14,10 +14,8 @@ I then began working on the html and css to create my basic page layout before m
 I used the OpenWeatherMap website to gain access to the keys necessary to link to the api to retrieve the most accurate data.
 ## Usage
 Simply search any city in the entire world to find accurate current temperature, humidity, wind speed and UV. Screen shot is included in images folder in assets.
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![screenshotImage](.//assets/images/weatherDashboardSS.png)
     ```
 ## Credits
 I collaborated with my tutor, Faran Navazi.
